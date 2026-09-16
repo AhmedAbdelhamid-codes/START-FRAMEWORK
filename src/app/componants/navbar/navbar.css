@@ -1,0 +1,54 @@
+.mynav{
+    background-color: var(--secound-color);
+    color: var(--primary-text-color);
+    height: 100px;
+}
+
+.navbar-nav .nav-item .nav-link{
+ color: var(--primary-text-color);
+ position: relative;
+ padding: 0px;
+}
+.navbar-nav .nav-item .nav-link:hover{
+ color: var(--primary-color);
+}
+
+.navbar-nav .nav-item .nav-link::before,
+.navbar-nav .nav-item .nav-link::after{
+ content: "";
+ position: absolute;
+ bottom: -1px;
+ width: 0%;
+ height: 2px;
+ background-color: var(--primary-color);
+ transition: var(--trans);
+}
+.navbar-nav .nav-item .nav-link::before{
+ right: 50%;
+}
+.navbar-nav .nav-item .nav-link::after{
+ left: 50%;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after,
+.navbar-nav .nav-item .nav-link:hover::before,
+.navbar-nav .nav-item .nav-link.navActive::before,
+.navbar-nav .nav-item .nav-link.navActive::after{
+ width: 50%;
+}
+
+.navbar-nav .nav-item .nav-link.navActive{
+color: var(--primary-color);
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse{
+        background-color: black;
+    }
+
+    .navbar-toggler{
+        background-color: var(--bg-btn);
+    }
+}
+
+

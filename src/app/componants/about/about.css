@@ -1,0 +1,31 @@
+.about{
+    background-color: var(--primary-color);
+    min-height: calc(85vh - 72px);
+    margin-top: 72px;
+}
+
+.star{
+width: 25%;
+}
+
+.star::after{
+    content: "";
+    position: absolute;
+    right: 30px;
+    width: 35%;
+    height: 4px;
+    background-color: var(--primary-text-color);
+}
+
+.star::before{
+    content: "";
+    position: absolute;
+    left: 30px;
+    width: 35%;
+    height: 4px;
+    background-color: var(--primary-text-color);
+}
+
+.aboutMe p{
+flex: 1 1 250px;
+}

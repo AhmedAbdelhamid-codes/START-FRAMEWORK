@@ -1,0 +1,47 @@
+.contact{
+    background-color: var(--primary-text-color);
+    min-height: calc(100vh - 220px);
+    margin: 170px 0px 50px 0px;
+}
+
+.titel{
+    color: var(--secound-text-color);
+}
+
+.star{
+ width: 25vw;
+  gap: 15px;
+}
+
+.star .icon{
+  color: var(--secound-text-color);
+}
+
+.star span{
+    height: 4px;
+    background-color: var(--secound-text-color);
+    flex: 1;
+}
+
+.field{
+  width: 60vw;
+}
+
+.field input{
+ border: 0px solid white;
+ outline: 0px;
+ border-bottom: 1px solid black;
+ border-radius: 20px;
+ transition: var(--trans);
+}
+
+.field input:focus{
+ border: 1px solid var(--primary-color);
+}
+
+.eye{
+top: 40%;
+transform: translateY(-40%);
+right: -30px;
+cursor: pointer;
+}

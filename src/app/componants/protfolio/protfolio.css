@@ -1,0 +1,55 @@
+.protfolio{
+    background-color: var(--primary-text-color);
+    min-height: calc(100vh - 220px);
+    margin: 170px 0px 50px 0px;
+}
+
+.titel{
+    color: var(--secound-text-color);
+}
+
+.star{
+ width: 25%;
+}
+
+.star .icon{
+  color: var(--secound-text-color);
+}
+
+.star::after{
+    content: "";
+    position: absolute;
+    right: 30px;
+    width: 35%;
+    height: 4px;
+    background-color: var(--secound-text-color);
+}
+
+.star::before{
+    content: "";
+    position: absolute;
+    left: 30px;
+    width: 35%;
+    height: 4px;
+    background-color: var(--secound-text-color);
+}
+
+img{
+    border-radius: 10px;
+}
+
+.overlay{
+    inset: 0;
+    background-color: #1abc9cd6;
+    border-radius: 10px;
+    color: var(--secound-text-color);
+    font-size: 100px;
+    transition: var(--trans);
+    cursor: pointer;
+    opacity: 0;
+}
+
+.imge:hover .overlay{
+inset: 0;
+opacity: 1;
+}

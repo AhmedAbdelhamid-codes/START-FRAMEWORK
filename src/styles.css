@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+/* =========================
+   Global Variables
+========================= */
+
+:root {
+  --primary-color: #1ABC9C;
+  --secound-color: #2C3E50;
+  --bottom-footer:#1A252F;
+ 
+  --primary-text-color:#ffffff;
+  --secound-text-color: #2C3E50;
+
+  --bg-btn:#0DCAF0;
+  --bg-btn-hov: #2C3E50;
+
+  --border-radius: 20px;
+
+  --trans: 0.3s;
+}
+
+
+/* =========================
+   Reset
+========================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  color: var(--primary-text-color);
+  background-color: var(--primary-text-color);
+}
+
+/* =========================
+   General Elements
+========================= */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* =========================
+   Global Utility Classes
+========================= */
+
+

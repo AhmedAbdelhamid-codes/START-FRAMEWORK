@@ -1,0 +1,28 @@
+<section class="contact d-flex justify-content-center align-items-center">
+    <div class="container text-center">
+      <div class="topSec mb-4">
+        <h1 class="titel fs-1">conatct section</h1>
+        <div class="star m-auto mb-2 text-white position-relative d-flex align-items-center">
+            <span></span>
+            <i class="fa-solid fa-star icon"></i>
+            <span></span>
+        </div>
+       </div>
+       <form action="">
+        <div class="field m-auto mb-5">
+            <input type="text" placeholder="Username" class="p-2 w-100">
+        </div>
+        <div class="field m-auto mb-5">
+            <input type="number" placeholder="Userage" class="p-2 w-100">
+        </div>
+        <div class="field m-auto mb-5">
+            <input type="email" placeholder="Useremail" class="p-2 w-100">
+        </div>
+        <div class="field m-auto mb-5 position-relative">
+            <input [type]="passType" placeholder="Userpassword" class="p-2 w-100">
+             <i [class.fa-eye]="passType === 'password'" [class.fa-eye-slash]="passType === 'text' " (click)="togglePassword()"  class="eye fa-solid text-dark position-absolute fs-5"></i>
+        </div>
+        <button type="button" class="text-center btn btn-info">Send Message</button>
+       </form>
+    </div>
+</section>
