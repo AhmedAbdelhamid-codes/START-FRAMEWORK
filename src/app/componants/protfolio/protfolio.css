@@ -9,29 +9,18 @@
 }
 
 .star{
- width: 25%;
+ width: 25vw;
+  gap: 15px;
 }
 
 .star .icon{
   color: var(--secound-text-color);
 }
 
-.star::after{
-    content: "";
-    position: absolute;
-    right: 30px;
-    width: 35%;
+.star span{
     height: 4px;
     background-color: var(--secound-text-color);
-}
-
-.star::before{
-    content: "";
-    position: absolute;
-    left: 30px;
-    width: 35%;
-    height: 4px;
-    background-color: var(--secound-text-color);
+    flex: 1;
 }
 
 img{

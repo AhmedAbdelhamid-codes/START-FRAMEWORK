@@ -5,23 +5,16 @@
 }
 
 .star{
-width: 25%;
+ width: 20vw;
+  gap: 15px;
 }
 
-.star::after{
-    content: "";
-    position: absolute;
-    right: 30px;
-    width: 35%;
-    height: 4px;
-    background-color: var(--primary-text-color);
+.star .icon{
+  color: var(--primary-text-color);
 }
 
-.star::before{
-    content: "";
-    position: absolute;
-    left: 30px;
-    width: 35%;
+.star span{
     height: 4px;
     background-color: var(--primary-text-color);
+    flex: 1;
 }
